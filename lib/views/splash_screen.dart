@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
+import '../transition_routing/slide_rigt_routing.dart';
 import '../utilis/reusable_button.dart';
+import 'on_boarding_pages.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -25,7 +27,14 @@ class SplashScreen extends StatelessWidget {
               child: MyButton(
                 textColor: const Color(0xFF92A3FD),
                 bgColor: const Color(0xFFFFFFFF),
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    SlideRightRoute(
+                      page: const OnboardingPages(),
+                    ),
+                  );
+                },
                 title: 'Get Started',
               ),
             ),
