@@ -1,10 +1,37 @@
 import 'package:flutter/material.dart';
 
+import '../utilis/reusable_button.dart';
+
 class SplashScreen extends StatelessWidget {
   const SplashScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return Scaffold(
+      body: Stack(
+        children: <Widget>[
+          Container(
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage("assets/images/welcomscreen.png"),
+                fit: BoxFit.cover,
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: Align(
+              alignment: FractionalOffset.bottomCenter,
+              child: MyButton(
+                textColor: const Color(0xFF92A3FD),
+                bgColor: const Color(0xFFFFFFFF),
+                onTap: () {},
+                title: 'Get Started',
+              ),
+            ),
+          )
+        ],
+      ),
+    );
   }
 }
