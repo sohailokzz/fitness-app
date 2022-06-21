@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../transition_routing/slide_top_routing.dart';
 import '../utilis/divider_with_text.dart';
 import '../utilis/google_facabook_buttons.dart';
 import '../utilis/my_checkbox.dart';
 import '../utilis/my_richtext.dart';
 import '../utilis/my_textfield.dart';
 import '../utilis/reusable_button.dart';
+import 'complete_profile_view.dart';
 
 class CreateAccountView extends StatelessWidget {
   const CreateAccountView({Key? key}) : super(key: key);
@@ -78,7 +80,14 @@ class CreateAccountView extends StatelessWidget {
                   height: 50,
                 ),
                 MyButton(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      SlideTopRoute(
+                        page: const CompleteProfileView(),
+                      ),
+                    );
+                  },
                   title: 'Register',
                   bgColor: const Color(0XFF92A3FD),
                   textColor: Colors.white,
