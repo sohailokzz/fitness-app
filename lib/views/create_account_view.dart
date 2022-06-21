@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../transition_routing/slide_bottom_routing.dart';
 import '../transition_routing/slide_top_routing.dart';
 import '../utilis/divider_with_text.dart';
 import '../utilis/google_facabook_buttons.dart';
@@ -9,6 +10,7 @@ import '../utilis/my_richtext.dart';
 import '../utilis/my_textfield.dart';
 import '../utilis/reusable_button.dart';
 import 'complete_profile_view.dart';
+import 'login_view.dart';
 
 class CreateAccountView extends StatelessWidget {
   const CreateAccountView({Key? key}) : super(key: key);
@@ -116,7 +118,14 @@ class CreateAccountView extends StatelessWidget {
                 MyRichText(
                   text1: "Already have an account? ",
                   text2: 'Login',
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      SlideBottomRoute(
+                        page: const LoginView(),
+                      ),
+                    );
+                  },
                 ),
               ],
             ),
