@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../transition_routing/slide_rigt_routing.dart';
 import '../utilis/dropdown_menu.dart';
 import '../utilis/my_textfield.dart';
 import '../utilis/reusable_button.dart';
+import 'intro_pages_view.dart';
 
 class CompleteProfileView extends StatefulWidget {
   const CompleteProfileView({
@@ -89,7 +91,14 @@ class _CompleteProfileViewState extends State<CompleteProfileView> {
                 height: 20,
               ),
               MyButton(
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    SlideRightRoute(
+                      page: const IntroPages(),
+                    ),
+                  );
+                },
                 title: 'Next ⫸',
                 bgColor: const Color(0xFF92A3FD),
                 textColor: Colors.white,
