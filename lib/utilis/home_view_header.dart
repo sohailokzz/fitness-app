@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import '../transition_routing/slide_rigt_routing.dart';
+import '../views/notification_view.dart';
 
 class HomeViewHeader extends StatelessWidget {
   const HomeViewHeader({
@@ -38,7 +40,14 @@ class HomeViewHeader extends StatelessWidget {
             ],
           ),
           GestureDetector(
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                context,
+                SlideRightRoute(
+                  page: const NotificationView(),
+                ),
+              );
+            },
             child: Container(
               height: 40,
               width: 40,
