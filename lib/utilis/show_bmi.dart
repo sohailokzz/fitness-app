@@ -84,7 +84,7 @@ class MyBMIChart extends StatefulWidget {
 class _MyBMIChartState extends State<MyBMIChart> {
   final colorList = <Color>[
     Colors.white,
-    Colors.blue,
+    const Color(0xFFC58BF2),
   ];
   @override
   Widget build(BuildContext context) {

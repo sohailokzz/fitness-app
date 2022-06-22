@@ -13,7 +13,7 @@ class HomeViewHeader extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(
         vertical: 16,
-        horizontal: 20,
+        horizontal: 24,
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
