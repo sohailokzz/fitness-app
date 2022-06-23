@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../utilis/bottom_nav_bar.dart';
+import '../utilis/widgets/bottom_nav_bar.dart';
 import 'home_view.dart';
 
 class DashboardView extends StatefulWidget {

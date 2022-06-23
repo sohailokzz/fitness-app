@@ -5,7 +5,7 @@ import '../data/image_list.dart';
 import '../data/subtitle_list.dart';
 import '../data/title_list.dart';
 import '../transition_routing/slide_rigt_routing.dart';
-import '../utilis/intro_item.dart';
+import '../utilis/widgets/intro_item.dart';
 import 'create_account_view.dart';
 
 class OnboardingPages extends StatefulWidget {

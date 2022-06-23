@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import '../transition_routing/slide_rigt_routing.dart';
-import '../views/notification_view.dart';
+import '../../transition_routing/slide_rigt_routing.dart';
+import '../../views/notification_view.dart';
 
 class HomeViewHeader extends StatelessWidget {
   const HomeViewHeader({

@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../transition_routing/slide_bottom_routing.dart';
 import '../transition_routing/slide_top_routing.dart';
-import '../utilis/divider_with_text.dart';
+import '../utilis/widgets/divider_with_text.dart';
 import '../utilis/google_facabook_buttons.dart';
 import '../utilis/my_checkbox.dart';
 import '../utilis/my_richtext.dart';

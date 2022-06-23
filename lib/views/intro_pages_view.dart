@@ -3,7 +3,7 @@ import 'package:flutter_swiper_null_safety/flutter_swiper_null_safety.dart';
 import '../data/intro_pages_data.dart';
 import '../transition_routing/slide_top_routing.dart';
 import '../utilis/custom_pagination.dart';
-import '../utilis/intro_design.dart';
+import '../utilis/widgets/intro_design.dart';
 import '../utilis/intro_header.dart';
 import '../utilis/reusable_button.dart';
 import 'dashboard_view.dart';
