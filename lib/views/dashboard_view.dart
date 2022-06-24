@@ -1,3 +1,4 @@
+import 'package:fitness_app/views/profile_view.dart';
 import 'package:flutter/material.dart';
 
 import '../utilis/widgets/bottom_nav_bar.dart';
@@ -56,11 +57,7 @@ class _DashboardViewState extends State<DashboardView> {
           ),
         );
       case 3:
-        return Center(
-          child: Container(
-            child: const Text("Profile"),
-          ),
-        );
+        return const ProfileView();
     }
   }
 }
