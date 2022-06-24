@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import '../utilis/widgets/notification_design.dart';
+
 import '../utilis/widgets/reusable_header.dart';
 
-class NotificationView extends StatelessWidget {
-  const NotificationView({Key? key}) : super(key: key);
+class ActivityTracker extends StatelessWidget {
+  const ActivityTracker({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -12,11 +12,8 @@ class NotificationView extends StatelessWidget {
         body: Column(
           children: const [
             ReusableHeader(
-              title: 'Notifications',
+              title: 'Activity Tracker',
             ),
-            Expanded(
-              child: Notifications(),
-            )
           ],
         ),
       ),

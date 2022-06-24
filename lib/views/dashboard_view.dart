@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../utilis/widgets/bottom_nav_bar.dart';
+import 'activity_tracker_view.dart';
 import 'home_view.dart';
 
 class DashboardView extends StatefulWidget {
@@ -47,11 +48,7 @@ class _DashboardViewState extends State<DashboardView> {
       case 0:
         return const HomeView();
       case 1:
-        return Center(
-          child: Container(
-            child: const Text("Messages"),
-          ),
-        );
+        return const ActivityTracker();
       case 2:
         return Center(
           child: Container(
