@@ -9,10 +9,25 @@ class ProfileView extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         body: Column(
-          children: const [
-            ReusableHeader(
+          children: [
+            const ReusableHeader(
               title: 'Profile',
             ),
+            Row(
+              children: [
+                Container(
+                  decoration: const BoxDecoration(
+                    shape: BoxShape.circle,
+                    gradient: LinearGradient(
+                      colors: [
+                        Color(0XFFEAEEFF),
+                        Color(0XFFEAEEFF),
+                      ],
+                    ),
+                  ),
+                )
+              ],
+            )
           ],
         ),
       ),
