@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../utilis/widgets/reusable_header.dart';
+import '../utilis/widgets/small_reusable_button.dart';
 
 class ProfileView extends StatelessWidget {
   const ProfileView({Key? key}) : super(key: key);
@@ -53,28 +54,9 @@ class ProfileView extends StatelessWidget {
                     ],
                   ),
                 ),
-                SizedBox(
-                  height: 28,
-                  width: 68,
-                  child: ElevatedButton(
-                    onPressed: () {},
-                    style: ElevatedButton.styleFrom(
-                      shadowColor: const Color(0xFF92A3FD),
-                      primary: const Color(0xFF92A3FD),
-                      padding: const EdgeInsets.all(0.0),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(24.0),
-                      ),
-                    ),
-                    child: Text(
-                      'Edit',
-                      style: GoogleFonts.poppins(
-                        color: Colors.white,
-                        fontSize: 12,
-                        fontWeight: FontWeight.w400,
-                      ),
-                    ),
-                  ),
+                SmallReusableButton(
+                  title: 'Edit',
+                  onTap: () {},
                 ),
               ],
             ),

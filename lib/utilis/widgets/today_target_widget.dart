@@ -1,3 +1,4 @@
+import 'package:fitness_app/utilis/widgets/small_reusable_button.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -36,28 +37,9 @@ class TodayTargetWidget extends StatelessWidget {
                 fontWeight: FontWeight.w500,
               ),
             ),
-            SizedBox(
-              height: 28,
-              width: 68,
-              child: ElevatedButton(
-                onPressed: () {},
-                style: ElevatedButton.styleFrom(
-                  shadowColor: const Color(0xFF92A3FD),
-                  primary: const Color(0xFF92A3FD),
-                  padding: const EdgeInsets.all(0.0),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(24.0),
-                  ),
-                ),
-                child: Text(
-                  'Check',
-                  style: GoogleFonts.poppins(
-                    color: Colors.white,
-                    fontSize: 12,
-                    fontWeight: FontWeight.w400,
-                  ),
-                ),
-              ),
+            SmallReusableButton(
+              title: 'Check',
+              onTap: () {},
             ),
           ],
         ),
