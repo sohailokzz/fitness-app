@@ -1,3 +1,4 @@
+import 'package:fitness_app/utilis/widgets/reusable_header.dart';
 import 'package:flutter/material.dart';
 
 class GalleryView extends StatelessWidget {
@@ -5,6 +6,14 @@ class GalleryView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return Scaffold(
+      body: Column(
+        children: const [
+          ReusableHeader(
+            title: 'Progress Photo',
+          ),
+        ],
+      ),
+    );
   }
 }
