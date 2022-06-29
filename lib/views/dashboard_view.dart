@@ -1,3 +1,4 @@
+import 'package:fitness_app/views/gallery_view.dart';
 import 'package:fitness_app/views/profile_view.dart';
 import 'package:flutter/material.dart';
 
@@ -51,11 +52,7 @@ class _DashboardViewState extends State<DashboardView> {
       case 1:
         return const ActivityTracker();
       case 2:
-        return Center(
-          child: Container(
-            child: const Text("Photos"),
-          ),
-        );
+        return const GalleryView();
       case 3:
         return const ProfileView();
     }
