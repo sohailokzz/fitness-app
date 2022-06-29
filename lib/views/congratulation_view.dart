@@ -7,6 +7,46 @@ class CongratulationView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return Scaffold(
+      body: Column(
+        children: [
+          Image.asset('assets/images/womenfootball.png'),
+          const SizedBox(
+            height: 16,
+          ),
+          Text(
+            'Congratulations, You Have Finished Your Workout',
+            textAlign: TextAlign.center,
+            style: GoogleFonts.poppins(
+              fontSize: 20,
+              fontWeight: FontWeight.w700,
+              color: Colors.black,
+            ),
+          ),
+          const SizedBox(
+            height: 12,
+          ),
+          Text(
+            'Exercises is king and nutrition is queen.'
+            ' Combine the two and you will have a kingdom',
+            textAlign: TextAlign.center,
+            style: GoogleFonts.poppins(
+              fontSize: 12,
+              fontWeight: FontWeight.w400,
+              color: const Color(0xFF7B6F72),
+            ),
+          ),
+          Align(
+            alignment: FractionalOffset.bottomCenter,
+            child: MyButton(
+              onTap: () {},
+              title: 'Back To Home',
+              bgColor: const Color(0xFF92A3FD),
+              textColor: Colors.white,
+            ),
+          )
+        ],
+      ),
+    );
   }
 }
