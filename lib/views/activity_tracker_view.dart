@@ -7,10 +7,10 @@ class ActivityTracker extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
+    return const SafeArea(
       child: Scaffold(
         body: Column(
-          children: const [
+          children: [
             ReusableHeader(
               title: 'Activity Tracker',
             ),

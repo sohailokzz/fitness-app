@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper_null_safety/flutter_swiper_null_safety.dart';
 
@@ -27,8 +29,7 @@ class CustomPaginationBuilder extends SwiperPlugin {
     List<Widget> list = [];
 
     if (config.itemCount > 20) {
-      print(
-          "The itemCount is too big, we suggest use FractionPaginationBuilder instead of DotSwiperPaginationBuilder in this sitituation");
+      log("The itemCount is too big, we suggest use FractionPaginationBuilder instead of DotSwiperPaginationBuilder in this sitituation");
     }
 
     int itemCount = config.itemCount;

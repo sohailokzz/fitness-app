@@ -26,7 +26,7 @@ class MyButton extends StatelessWidget {
         },
         style: ElevatedButton.styleFrom(
           shadowColor: const Color(0xFF92A3FD),
-          primary: bgColor,
+          backgroundColor: bgColor,
           padding: const EdgeInsets.all(0.0),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(24.0),

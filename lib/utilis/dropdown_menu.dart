@@ -9,6 +9,7 @@ class AppDropdownInput<T> extends StatelessWidget {
   final void Function(T?)? onChanged;
 
   const AppDropdownInput({
+    super.key,
     this.hintText = 'Please select an Option',
     this.options = const [],
     required this.getLabel,

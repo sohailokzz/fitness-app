@@ -98,9 +98,9 @@ class CreateAccountView extends StatelessWidget {
                   height: 20,
                 ),
                 const DividersWithText(),
-                Row(
+                const Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: const [
+                  children: [
                     GoogleFacebookButtons(
                       imagePath: "assets/images/googlelogo.png",
                     ),

@@ -47,7 +47,7 @@ class TodayActivityTracker extends StatelessWidget {
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(
                       shadowColor: const Color(0xFF92A3FD),
-                      primary: const Color(0xFF92A3FD),
+                      backgroundColor: const Color(0xFF92A3FD),
                       padding: const EdgeInsets.all(0.0),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(8.0),
@@ -65,10 +65,10 @@ class TodayActivityTracker extends StatelessWidget {
                 ),
               ],
             ),
-            Padding(
-              padding: const EdgeInsets.all(4.0),
+            const Padding(
+              padding: EdgeInsets.all(4.0),
               child: Row(
-                children: const [
+                children: [
                   ReusableCard(
                     imagePath: 'assets/images/h2o.png',
                     waterAmount: '8L',

@@ -22,7 +22,7 @@ class SmallReusableButton extends StatelessWidget {
         },
         style: ElevatedButton.styleFrom(
           shadowColor: const Color(0xFF92A3FD),
-          primary: const Color(0xFF92A3FD),
+          backgroundColor: const Color(0xFF92A3FD),
           padding: const EdgeInsets.all(0.0),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(24.0),

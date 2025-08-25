@@ -4,10 +4,10 @@ class VerticelSlider extends StatefulWidget {
   const VerticelSlider({Key? key}) : super(key: key);
 
   @override
-  _VerticelSliderState createState() => _VerticelSliderState();
+  VerticelSliderState createState() => VerticelSliderState();
 }
 
-class _VerticelSliderState extends State<VerticelSlider> {
+class VerticelSliderState extends State<VerticelSlider> {
   double value = 75;
 
   @override
